@@ -10,7 +10,7 @@ def load_library(path)
   emots["get_emoticon"] = {}
   emoticons.each do |key, arr|
     arr.each do |k, v|
-
+      emots["get_meaning"] = key
     end
   end
   binding.pry
