@@ -17,7 +17,7 @@ binding.pry
       end
     end
   end
-  # binding.pry
+
   emots
 
 end
