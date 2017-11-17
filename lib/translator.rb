@@ -9,7 +9,7 @@ def load_library(path)
     arr.each do |k, v|
       emoticons["get_meaning"] = {}
       if !emoticons["get_meaning"].include?(key)
-        emots["get_meaning"] = key
+        emoticons["get_meaning"] = key
       end
     end
   end
