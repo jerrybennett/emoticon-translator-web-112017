@@ -12,7 +12,7 @@ def load_library(path)
     arr.each do |i, v|
       emots.each do |k, val|
         k.each do |i|
-
+binding.pry
         end
       end
     end
