@@ -9,9 +9,9 @@ def load_library(path)
   emoticons.each do |key, arr|
     arr.each do |k, v|
 
-      if !emots.include?(key)
+      # if !emots.include?(key)
         emots["get_meaning"] = {k[1] => key}
-      end
+      # end
     end
   end
   binding.pry
