@@ -9,9 +9,9 @@ def load_library(path)
   emots["get_meaning"] = {}
   emots["get_emoticon"] = {}
   emoticons.each do |key, arr|
-    # if !emots["get_meaning"].include?(key)
+
       emots["get_meaning"].merge(key)
-    # end
+
     arr.each do |k, v|
 
     end
