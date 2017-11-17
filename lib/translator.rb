@@ -11,7 +11,7 @@ def load_library(path)
   emoticons.each do |key, arr|
     arr.each do |k, v|
       emots.each do |mk, mv|
-        if !emots[mk].include?(key)
+        if !emots[mv].include?(key)
           emots[mv] = key
         end
       end
