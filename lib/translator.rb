@@ -7,10 +7,11 @@ def load_library(path)
   emoticons = YAML.load_file(path)
   emots = {}
 
-  emots["get_emoticon"] = {}
+
   emoticons.each do |key, arr|
     arr.each do |i, v|
       emots["get_meaning"] = {arr[1] => key}
+      emots["get_emoticon"] = {arr[0] => arr[1]}
 binding.pry
 
     end
