@@ -5,17 +5,16 @@ require "yaml"
 
 def load_library(path)
   emoticons = YAML.load_file(path)
-  emots = {}
-  emoticons.each do |key, arr|
+  emoticons.map do |key, arr|
     arr.each do |k, v|
-      emots["get_meaning"] = {}
-      if !emots["get_meaning"].include?(key)
+      emoticons["get_meaning"] = {}
+      if !emoticons["get_meaning"].include?(key)
         emots["get_meaning"] = key
       end
     end
   end
   binding.pry
-  emots
+  emoticons
 
 end
 
