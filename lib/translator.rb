@@ -11,7 +11,7 @@ def load_library(path)
   emoticons.each do |key, arr|
     arr.each do |i, v|
       emots.each do |k, val|
-        k.each do |i|
+        k.each do
 binding.pry
         end
       end
