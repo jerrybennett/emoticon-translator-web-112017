@@ -14,7 +14,7 @@ def load_library(path)
       # end
     end
   end
-  binding.pry
+  # binding.pry
   emots
 
 end
