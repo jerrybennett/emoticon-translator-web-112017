@@ -12,12 +12,9 @@ def load_library(path)
     arr.each do |i, v|
       emots.each do |k, val|
         k.each do |i|
-          if !emots.include?(key)
+
         end
       end
-         = {arr[1] => key}
-         = {arr[0] => arr[1]}
-      # end
     end
   end
   # binding.pry
