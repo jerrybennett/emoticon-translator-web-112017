@@ -6,8 +6,9 @@ require "yaml"
 def load_library(path)
   emoticons = YAML.load_file(path)
   emoticons.map do |key, arr|
+    emoticons["get_meaning"] = {}
     arr.each do |k, v|
-      emoticons["get_meaning"] = {}
+
       if !emoticons["get_meaning"].include?(key)
         emoticons["get_meaning"] = key
       end
