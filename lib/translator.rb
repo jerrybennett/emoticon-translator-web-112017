@@ -6,13 +6,11 @@ require "yaml"
 def load_library(path)
   emoticons = YAML.load_file(path)
   emots = {}
-
-
   emoticons.each do |key, arr|
     arr.each do |i, v|
       emots["get_meaning"] = {arr[1] => key}
       emots["get_emoticon"] = {arr[0] => arr[1]}
-binding.pry
+# binding.pry
 
     end
   end
